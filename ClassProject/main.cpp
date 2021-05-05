@@ -44,11 +44,13 @@ int main(int argc, const char * argv[]) {
     d98.setInches(1000);
     cout << "settin 1000 inches to d98: "<< d98.describeDist()<<endl;
     
+    //Creating an array:
+    cout << "Create arrays of Distance Objects" << endl;
+    Distance distDefault[5];
+    cout << "the  DistanceDefault of  [3]is  "<< distDefault[3].describeDist() << endl;
     
-    
-    
-    
-    
+    Distance distConsValues [] = { Distance(1,2), Distance(29,2), Distance(13,8)  };
+    cout << "the  DistConsValues of  [2] is  "<< distConsValues[2].describeDist() << endl;
     
     return 0;
 }
